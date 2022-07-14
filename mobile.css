@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    max-width: 375px;
+    /* width: 375px; */
+    height: auto;
+    /* font-family: 'Barlow Semi Condensed', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    margin: 60px auto;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(0, 0%, 81%);
+    display: flex;
+}
+
+.first {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(263, 55%, 52%);
+    padding: 30px;
+    background-position: 230px 0px;
+    border-radius: 10px;
+}
+
+.top {
+    overflow: auto;
+}
+
+.top img {
+    float: left;
+    width: 13%;
+    border-radius: 100%;
+    border: 2px solid rgb(255, 255, 255, .5);
+    margin-right: 10px;
+}
+
+.name h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.name p {
+    /* font-weight: 500; */
+    color: rgb(207, 207, 207, .5);
+}
+
+.para1 {
+    padding: 15px 0;
+    font-size: 23px;
+    color: hsl(0, 0%, 81%);
+}
+
+.para2 {
+    color: rgb(207, 207, 207, .7);
+    font-size: 15px;
+    padding: 9px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.second {
+    background-color: hsl(217, 19%, 35%);
+    padding: 30px;
+    background-position: 230px 0px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.third {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    background-position: 230px 0px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.third h2,
+.third .para1,
+.fifth h2,
+.fifth .para1 {
+    color: hsl(217, 19%, 35%);
+}
+
+.third .name p,
+.third .para2,
+.fifth .name p,
+.fifth .para2 {
+    color: hsl(217, 19%, 35%);
+    opacity: 70%;
+}
+
+.fourth {
+    background-color: hsl(219, 29%, 14%);
+    padding: 30px;
+    background-position: 230px 0px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.fifth {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    background-position: 230px 0px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.attribution a {
+    text-align: center;
+}

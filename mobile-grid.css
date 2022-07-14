@@ -1,0 +1,117 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-size: 13px;
+        max-width: 375px;
+        /* width: 375px; */
+        height: auto;
+        /* font-family: 'Barlow Semi Condensed', sans-serif; */
+        /* font-family: 'Open Sans', sans-serif; */
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        background-color: hsl(0, 0%, 81%);
+        font-size: 13px;
+    }
+    
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 300px;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        gap: 1rem;
+        grid-template-areas: 'purplebox''purplebox''greybox''whitebox1''navybox''whitebox2''whitebox2';
+    }
+    
+    .purplebox {
+        background-image: url(../images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(263, 55%, 52%);
+        padding: 30px;
+        background-position: top right;
+        border-radius: 10px;
+    }
+    
+    .top {
+        overflow: auto;
+    }
+    
+    .top img {
+        float: left;
+        width: 13%;
+        border-radius: 100%;
+        border: 2px solid rgb(255, 255, 255, .5);
+        margin-right: 10px;
+    }
+    
+    .name h2 {
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .name p {
+        /* font-weight: 500; */
+        color: rgb(207, 207, 207, .5);
+    }
+    
+    .para1 {
+        padding: 15px 0;
+        font-size: 23px;
+        color: hsl(0, 0%, 81%);
+    }
+    
+    .para2 {
+        color: rgb(207, 207, 207, .7);
+        font-size: 15px;
+        padding: 9px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    
+    .greybox {
+        background-color: hsl(217, 19%, 35%);
+        padding: 30px;
+        background-position: 230px 0px;
+        border-radius: 10px;
+    }
+    
+    .whitebox1 {
+        background-color: hsl(0, 0%, 100%);
+        padding: 30px;
+        background-position: 230px 0px;
+        border-radius: 10px;
+    }
+    
+    .whitebox1 h2,
+    .whitebox1 .para1,
+    .whitebox2 h2,
+    .whitebox2 .para1 {
+        color: hsl(217, 19%, 35%);
+    }
+    
+    .whitebox1 .name p,
+    .whitebox1 .para2,
+    .whitebox2 .name p,
+    .whitebox2 .para2 {
+        color: hsl(217, 19%, 35%);
+        opacity: 70%;
+    }
+    
+    .navybox {
+        background-color: hsl(219, 29%, 14%);
+        padding: 30px;
+        background-position: 230px 0px;
+        border-radius: 10px;
+    }
+    
+    .whitebox2 {
+        background-color: hsl(0, 0%, 100%);
+        padding: 30px;
+        background-position: 230px 0px;
+        border-radius: 10px;
+    }
+    
+    .attribution {
+        text-align: center;
+    }

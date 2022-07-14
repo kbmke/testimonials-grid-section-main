@@ -1,0 +1,157 @@
+         /* Imports Barlow Semi Condensed font 500 and 600 weight */
+         
+         @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+         /* Sets universal CSS variables */
+         
+          :root {
+             --purple: hsl(263, 55%, 52%);
+             --grey: hsl(217, 19%, 35%);
+             --navy: hsl(219, 29%, 14%);
+             --white: hsl(0, 0%, 100%);
+             --silver: hsl(0, 0%, 81%);
+             --very-light-grey: hsl(210, 46%, 95%);
+             --violet: hsl(263, 55%, 70%);
+             ;
+         }
+         /* Makes every element into a box that includes margins and padding. */
+         
+         * {
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0;
+         }
+         /* ELEMENT FORMATTING */
+         /* Place all element formatting here. */
+         /* Effects all elements */
+         
+         html {
+             background-color: var(--very-light-grey);
+             font-family: 'Barlow Semi Condensed', sans-serif;
+             font-size: 13px;
+         }
+         /* Effects body elements */
+         
+         body {
+             position: relative;
+         }
+         /* CLASS FORMATTING */
+         
+         .purple {
+             background-color: var(--purple);
+         }
+         
+         .grey {
+             background-color: var(--grey);
+         }
+         
+         .white {
+             background-color: var(--white);
+         }
+         
+         .navy {
+             background-color: var(--navy);
+         }
+         /* Place all class formatting here. */
+         /* ID FORMATTING */
+         
+         #mainbox {
+             display: grid;
+             grid-template-columns: auto;
+             /* NOTE: 100% is the whole space and auto will grow/shrink with the size. */
+             grid-template-rows: repeat(autofill, auto);
+             grid-template-areas: 'purplebox''purplebox''greybox''whitebox1''navy''whitebox2''whitebox2';
+             gap: 1rem;
+         }
+         
+         #purplebox {
+             grid-area: 'purplebox';
+             grid-row: 1 / 3;
+         }
+         
+         #greybox {
+             grid-area: 'greybox';
+             grid-row: 3 / 4;
+         }
+         
+         #whitebox1 {
+             grid-area: 'whitebox1';
+             grid-row: 4 / 5;
+         }
+         
+         #navybox {
+             grid-area: 'navybox';
+             grid-row: 5 / 7;
+         }
+         
+         #whitebox2 {
+             grid-area: 'whitebox2';
+             grid-row: 7 / 9;
+         }
+         
+         #avatarbox1 img,
+         #avatarbox2 img,
+         #avatarbox3 img,
+         #avatarbox4 img {
+             border-radius: 50%;
+         }
+         /* Place all id formatting here. */
+         /* Utility classes */
+         /* Gives elements relative position */
+         
+         .rel {
+             position: relative;
+         }
+         /* Makes a flex row */
+         
+         .flexr {
+             display: flex;
+             flex-direction: row;
+         }
+         /* Makes a flex column */
+         
+         .flexc {
+             display: flex;
+             flex-direction: column;
+         }
+         /* Makes flex elements centered */
+         
+         .fcenter {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         /* Changes settings at 768px screen size to 1023px screen size*/
+         
+         @media only screen and (min-width: 768px) and (max-width: 1440px) {
+             #mainbox {
+                 display: grid;
+                 grid-template-columns: repeat(3, 1fr);
+                 grid-template-rows: repeat(3, 1fr);
+                 grid-template-areas: 'purplebox''purplebox''greybox''whitebox1''navy''navy''whitebox2''whitebox2''whitebox2';
+                 gap: 1rem;
+             }
+             /* ELEMENT FORMATTING */
+             /* Changes the em base of the page */
+             html {
+                 font-size: ;
+             }
+             /* CLASS FORMATTING */
+             /* ID FORMATTING */
+             /* Changes settings at 1024px screen size */
+             @media only screen and (min-width: 1024px) {
+                 #mainbox {
+                     display: grid;
+                     grid-template-columns: repeat(4, 1fr);
+                     grid-template-rows: repeat(2, 1fr);
+                     grid-template-areas: 'purplebox''purplebox''greybox''whitebox2''whitebox1''navy''navy''whitebox2';
+                     gap: 1rem;
+                 }
+                 /* ELEMENT FORMATTING */
+                 /* Changes the em base of the page */
+                 html {
+                     font-size: ;
+                 }
+                 /* CLASS FORMATTING */
+                 /* ID FORMATTING */
+             }
+         }

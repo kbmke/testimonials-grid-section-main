@@ -1,0 +1,128 @@
+ /* IMPORTS */
+ 
+ :root {
+     --purple: hsl(263, 55%, 52%);
+     --grey: hsl(217, 19%, 35%);
+     --navy: hsl(219, 29%, 14%);
+     --white: hsl(0, 0%, 100%);
+     --silver: hsl(0, 0%, 81%);
+     --very-light-grey: hsl(210, 46%, 95%);
+     --violet: hsl(263, 55%, 70%);
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-size: 13px;
+ }
+ /* SETS UNIVERSAL CSS VARIABLES */
+ 
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ /* MAKES EVERY ELEMENT INTO A BOX AND RESETS THE MARGIN AND PADDING */
+ /* PLACE ALL ELEMENT FORMATTING BELOW HERE*/
+ 
+ html {
+     background-color: var(--very-light-grey);
+ }
+ /* EFFECTS ALL ELEMENTS */
+ 
+ body {
+     position: relative;
+ }
+ /* ABOVE EFFECTS BODY ELEMENTS */
+ 
+ .abs {
+     position: absolute;
+ }
+ /* ABOVE GIVES ELEMENTS ABSOLUTE POSITION */
+ 
+ .rel {
+     position: relative;
+ }
+ /* ABOVE GIVES ELEMENTS RELATIVE POSITION */
+ 
+ .flexr {
+     display: flex;
+     flex-direction: row;
+ }
+ /* ABOVE MAKES A FLEX ROW */
+ 
+ .flexc {
+     display: flex;
+     flex-direction: column;
+ }
+ /* ABOVE MAKES A FLEX ROW */
+ 
+ .fcenter {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ /* ABOVE MAKES FLEX ELEMENTS CENTERED */
+ 
+ @media only screen and (min-width: 375px) and (max-width: 769px) {
+     /* CHANGES SETTINGS AT 768px SCREEN SIZE TO 1023px SCREEN SIZE*/
+     #grid-container {
+         display: grid;
+         justify-content: center;
+         grid-template-columns: 300px;
+         /* NOTE: 100% is the whole space and auto will grow/shrink with the size. */
+         grid-template-rows: repeat(autofill, auto);
+         grid-template-areas: 'purplebox''purplebox''greybox''whitebox1''navy''navy''whitebox2''whitebox2';
+         gap: 1rem;
+     }
+     #purplebox {
+         grid-template-areas: 'purplebox';
+         grid-row: 1 / 4;
+     }
+     #greybox {
+         grid-template-areas: 'grey';
+         grid-row: 4 / 6;
+     }
+     #whitebox1 {
+         grid-template-areas: 'whitebox1';
+         grid-row: 6 / 9;
+     }
+     #navybox {
+         grid-template-areas: 'navybox';
+         grid-row: 9 / 11;
+     }
+     #whitebox2 {
+         grid-template-areas: 'whitebox2';
+         grid-row: 11 / 13;
+     }
+     /* ID FORMATTING */
+     .avatarbox img {
+         border-radius: 50%;
+         width: 30px;
+     }
+     .card {
+         border-radius: 5px;
+     }
+     .purple {
+         background-color: var(--purple);
+     }
+     .grey {
+         background-color: var(--grey);
+     }
+     .white {
+         background-color: var(--white);
+     }
+     .navy {
+         background-color: var(--navy);
+     }
+     .attribution {
+         font-size: 11px;
+         text-align: center;
+     }
+     .attribution a {
+         color: hsl(228, 45%, 44%);
+     }
+     /* CLASS FORMATTING */
+ }
+ 
+ @media only screen and (min-width: 768px) and (max-width: 1440px) {
+     /* CHANGES SETTINGS AT 768px SCREEN SIZE TO 1023px SCREEN SIZE*/
+     /* ID FORMATTING */
+     /* CLASS FORMATTING */
+ }

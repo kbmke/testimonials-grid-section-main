@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"cSpell.words": [
+			"Kira"
+		],
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"editor.suggestSelection": "recentlyUsedByPrefix",
+		"editor.acceptSuggestionOnEnter": "smart"
+	}
+}

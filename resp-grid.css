@@ -2,32 +2,40 @@
  
  :root {
      --purple: hsl(263, 55%, 52%);
+     --grad1: hsl(0, 0%, 70%);
+     --para1: hsl(0, 0%, 50%);
      --grey: hsl(217, 19%, 35%);
+     --greygrad: hsl(217, 19%, 70%);
+     --greypara: hsl(217, 19%, 50%);
      --navy: hsl(219, 29%, 14%);
+     --navgrad: hsl(219, 29%, 70%);
+     --navypara: hsl(219, 29%, 50%);
      --white: hsl(0, 0%, 100%);
-     --silver: hsl(0, 0%, 81%);
-     --very-light-grey: hsl(210, 46%, 95%);
-     --violet: hsl(263, 55%, 70%);
+     --lightgrey: hsl(0, 0%, 81%);
+     --verylightgrey: hsl(210, 46%, 95%);
+     --whiteboxhead: hsl(210, 46%, 95%);
      font-family: 'Barlow Semi Condensed', sans-serif;
      font-size: 13px;
  }
- /* SETS UNIVERSAL CSS VARIABLES */
+ /* ABOVE SETS UNIVERSAL CSS VARIABLES */
  
  * {
      box-sizing: border-box;
      margin: 0;
      padding: 0;
  }
- /* MAKES EVERY ELEMENT INTO A BOX AND RESETS THE MARGIN AND PADDING */
+ /* ABOVE MAKES EVERY ELEMENT INTO A BOX AND RESETS THE MARGIN AND PADDING */
  /* PLACE ALL ELEMENT FORMATTING BELOW HERE*/
  
  html {
-     background-color: var(--very-light-grey);
+     background-color: var(--whiteboxhead);
  }
- /* EFFECTS ALL ELEMENTS */
+ /* ABOVE EFFECTS ALL ELEMENTS */
  
  body {
      position: relative;
+     width: 100%;
+     height: 100vh;
  }
  /* ABOVE EFFECTS BODY ELEMENTS */
  
@@ -61,7 +69,7 @@
  /* ABOVE MAKES FLEX ELEMENTS CENTERED */
  
  @media only screen and (min-width: 375px) and (max-width: 769px) {
-     /* CHANGES SETTINGS AT 768px SCREEN SIZE TO 1023px SCREEN SIZE*/
+     /* ABOVE CHANGES SETTINGS AT 768px SCREEN SIZE TO 1023px SCREEN SIZE*/
      #grid-container {
          display: grid;
          justify-content: center;
@@ -74,6 +82,7 @@
      #purplebox {
          grid-template-areas: 'purplebox';
          grid-row: 1 / 4;
+         margin-top: 40px;
      }
      #greybox {
          grid-template-areas: 'grey';
@@ -90,14 +99,73 @@
      #whitebox2 {
          grid-template-areas: 'whitebox2';
          grid-row: 11 / 13;
+         margin-bottom: 40px;
      }
-     /* ID FORMATTING */
+     #avatarpic1 {
+         border-radius: 50%;
+         border: 2px solid var(--violet);
+     }
+     #name1,
+     #name2 {
+         color: var(--white);
+     }
+     #name3,
+     #name5 {
+         color: hsl(219, 29%, 14%);
+     }
+     #grad1,
+     #grad2 {
+         color: var(--greygrad);
+     }
+     #head1,
+     #head2 {
+         color: var(--white);
+         /* font-weight: bold; */
+     }
+     #para1,
+     #para2,
+     #para3,
+     #para4 {
+         color: var(--greygrad);
+     }
+     /* ID FORMATTING ABOVE */
+     .top {
+         margin: 25px 20px;
+         /* border: 1px solid white; */
+         /* TEMPORARY */
+     }
      .avatarbox img {
          border-radius: 50%;
          width: 30px;
+         float: left;
      }
      .card {
          border-radius: 5px;
+         width: 300px;
+         padding-bottom: 30px;
+     }
+     .head {
+         padding-left: 5px;
+         padding-right: 9px;
+         font-size: 16px;
+         line-height: 22px;
+     }
+     .para {
+         line-height: 18px;
+         margin-top: 25px;
+     }
+     .avquotes {
+         /* border: 2px solid yellow; */
+         /* TEMPORARY */
+         margin: 0 20px;
+     }
+     .infobox {
+         margin: 10px 40px;
+         /* border: 1px solid black; */
+         /* TEMPORARY */
+     }
+     .background {
+         left: 170px;
      }
      .purple {
          background-color: var(--purple);
@@ -118,7 +186,7 @@
      .attribution a {
          color: hsl(228, 45%, 44%);
      }
-     /* CLASS FORMATTING */
+     /* CLASS FORMATTING ABOVE*/
  }
  
  @media only screen and (min-width: 768px) and (max-width: 1440px) {
@@ -126,3 +194,5 @@
      /* ID FORMATTING */
      /* CLASS FORMATTING */
  }
+ 
+ .,

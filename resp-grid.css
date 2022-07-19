@@ -285,11 +285,12 @@
      #grid-container {
          display: grid;
          justify-content: center;
-         grid-template-columns: repeat(150px, auto);
-         /* NOTE: 100% is the whole space and auto will grow/shrink with the size. */
-         grid-template-rows: auto;
+         grid-template-columns: repeat(4, 1fr);
+         /* grid-template-rows: repeat (2, 1fr); */
          grid-template-areas: 'purplebox''purplebox''greybox''whitebox1''navy''navy''whitebox2''whitebox2';
          gap: 2rem;
+         padding-block: 2rem;
+         margin-inline: auto;
      }
 
      #purplebox {

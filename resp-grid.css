@@ -78,7 +78,7 @@
      flex-direction: column;
  }
 
- /* ABOVE MAKES A FLEX ROW */
+ /* ABOVE MAKES A FLEX COLUMN */
 
  .fcenter {
      display: flex;
@@ -262,8 +262,12 @@
          /* padding-bottom: 10px; */
      }
 
+     .para4{
+        color: var(--light-grayish-blue);
+     }
+
      .whitepara,
-     .para4 {
+      {
          color: var(--lightgray);
      }
 
@@ -364,8 +368,9 @@
      /* ID FORMATTING ABOVE */
      .everthingbox {
          display: flex;
-         width: 95%;
-         margin-top: 50px auto;
+         width: 100%;
+         margin-top: 2rem auto;
+         padding: 2rem 5rem;
      }
 
      .card {
@@ -392,7 +397,7 @@
 
      .background {
          /* THE QUOTE BACKGROUND IN PURPLE CARD */
-         left: 200px;
+         left: 26.5rem;
      }
 
      .top {
@@ -460,8 +465,12 @@
      }
 
      .whitepara,
-     .para4 {
+      {
          color: var(--lightgray);
+     }
+
+   .para4{
+        color: var(--lightgray);
      }
 
      .attribution {

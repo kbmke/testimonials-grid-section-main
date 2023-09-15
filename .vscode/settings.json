@@ -1,11 +1,6 @@
 {
-  "liveServer.settings.port": 5502,
+  "liveServer.settings.port": 5503,
   "commentAnchors.showCursor": true,
   "commentAnchors.scrollPosition": "top",
-  "cSpell.words": [
-    "avquotes",
-    "flexc",
-    "flexr",
-    "Kira"
-  ]
+  "cSpell.words": ["avquotes", "flexc", "flexr", "Kira"]
 }
